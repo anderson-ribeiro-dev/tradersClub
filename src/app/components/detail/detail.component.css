@@ -1,0 +1,23 @@
+.homeText {
+  /* background-color: rgba(54, 54, 54, 1); */
+  /* height: 1000px; */
+  /* text-align: center; */
+  /* position: absolute; */
+}
+
+.aside {
+  height: 1000px;
+  background-color: rgba(0, 3, 8, 0.9);
+}
+
+.main {
+  background-color:rgba(4, 15, 32, 0.92);
+  height: 1000px;
+}
+
+.text-center
+{
+  top: 150px;
+  margin-right: 150px;
+  margin-bottom: 150px;
+}

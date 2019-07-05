@@ -1,0 +1,65 @@
+<div class="form-group" class="homePesquisa">
+  <div class="input-group md-form form-sm form-1 pl-0">
+      <div class="input-group-prepend">
+        <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fas fa-search text-white"
+            aria-hidden="true"></i></span>
+      </div>
+      <input class="form-control my-0 py-1" type="text" placeholder="Pesquise um Veículo" aria-label="Search">
+      <input type="submit" class="btn btn-light btnCadastrar" value="Pesquisar">
+    </div>
+</div>
+<div class="img-fluid">
+  <div class="imgCar" >
+    <div class="form">
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group ">
+            <input type="text" class="form-control" id="title" name="title" placeholder="Digite Descrição do Veículo">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" class="form-control" id="model" name="model"  placeholder="Digite o Modelo do Veículo">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" class="form-control" id="year" name="year" placeholder="Digite o Ano do Veículo">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <select class="form-control" id="brands" name="brands">
+          <option *ngFor="let brands of automaker.brands" >{{ brands.name }}</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" class="form-control" id="color" name="color" placeholder="Digite a Cor do Veículo">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input type="text" class="form-control" id="price" name="price"  placeholder="Digite o Valor do Veículo">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <input type="text" class="form-control" id="km" name="km"  placeholder="Digite o Km do Veículo">
+          </div>
+        </div>
+      </div>
+      <div >
+        <button type="submit" (click)="updatedCars(data, data.id)"  class="btn1" class="btn btn-light mr-2">Remover</button>
+        <button type="submit" (click)="removedCars(dado.id)" class="btn btn-light">Cancelar</button>
+        <button type="submit" (click)="insertCar()" class="btn btn-light btn1">Cadastrar</button>
+      </div>
+  </div>
+  </div>
+</div>
+
